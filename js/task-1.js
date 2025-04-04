@@ -1,19 +1,19 @@
-function isEnoughCapacity(products, containerSize) {
-  // Отримуємо масив значень (кількість товарів) і сумуємо їх
-  const totalItems = Object.values(products).reduce(
-    (sum, quantity) => sum + quantity,
-    0
-  );
+// function isEnoughCapacity(products, containerSize) {
+//   // Отримуємо масив значень (кількість товарів) і сумуємо їх
+//   const totalItems = Object.values(products).reduce(
+//     (sum, quantity) => sum + quantity,
+//     0
+//   );
 
-  // Порівнюємо загальну кількість з розміром контейнера
-  return totalItems <= containerSize;
-}
+//   // Порівнюємо загальну кількість з розміром контейнера
+//   return totalItems <= containerSize;
+// }
 
-// Перевірка коректності функції
-console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
+// // Перевірка коректності функції
+// console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
 
-console.log(isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)); // false
+// console.log(isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)); // false
 
-console.log(isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 }, 14)); // true
+// console.log(isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 }, 14)); // true
 
-console.log(isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 }, 7)); // false
+// console.log(isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 }, 7)); // false

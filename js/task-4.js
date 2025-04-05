@@ -105,3 +105,14 @@
 // console.log(numbers); // [1, 2, 3, 4, 5]
 // // Функція повернула новий масив зі зміненими даними
 // console.log(doubledNumbers); // [2, 4, 6, 8, 10]
+
+// const planets = ['Earth', 'Mars', 'Venus', 'Jupiter'];
+
+// const planetsInUpperCase = planets.map(planet => planet.toUpperCase());
+// console.log(planetsInUpperCase); // ["EARTH", "MARS", "VENUS", "JUPITER"]
+
+// const planetsInLowerCase = planets.map(planet => planet.toLowerCase());
+// console.log(planetsInLowerCase); // ["earth", "mars", "venus", "jupiter"]
+
+// // Оригінальний масив не змінився
+// console.log(planets); // ["Earth", "Mars", "Venus", "Jupiter"]

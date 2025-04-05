@@ -117,13 +117,25 @@
 // // Оригінальний масив не змінився
 // console.log(planets); // ["Earth", "Mars", "Venus", "Jupiter"]
 
+// const students = [
+//   { name: 'Mango', score: 83 },
+//   { name: 'Poly', score: 59 },
+//   { name: 'Ajax', score: 37 },
+//   { name: 'Kiwi', score: 94 },
+//   { name: 'Houston', score: 64 },
+// ];
+
+// const names = students.map(student => student.name);
+// console.log(names); // ["Mango", "Poly", "Ajax", "Kiwi", "Houston"]
+
 const students = [
-  { name: 'Mango', score: 83 },
-  { name: 'Poly', score: 59 },
-  { name: 'Ajax', score: 37 },
-  { name: 'Kiwi', score: 94 },
-  { name: 'Houston', score: 64 },
+  { name: 'Mango', courses: ['mathematics', 'physics'] },
+  { name: 'Poly', courses: ['science', 'mathematics'] },
+  { name: 'Kiwi', courses: ['physics', 'biology'] },
 ];
 
-const names = students.map(student => student.name);
-console.log(names); // ["Mango", "Poly", "Ajax", "Kiwi", "Houston"]
+const mappedCourses = students.map(student => student.courses);
+console.log(mappedCourses); // [["mathematics", "physics"], ["science", "mathematics"], ["physics", "biology"]]
+
+const flattenedCourses = students.flatMap(student => student.courses);
+console.log(flattenedCourses); // ["mathematics", "physics", "science", "mathematics", "physics", "biology"];

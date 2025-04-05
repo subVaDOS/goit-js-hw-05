@@ -37,21 +37,31 @@
 // registerGuest('Poly', function notify(name) {
 //   console.log(`Dear ${name}, your room will be ready in 30 minutes`);
 // });
-function filterArray(numbers, value) {
-  const filteredNumbers = [];
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
 
-  numbers.forEach(number => {
-    if (number > value) {
-      filteredNumbers.push(number);
-    }
-  });
+//   numbers.forEach(number => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
 
-  return filteredNumbers;
-}
+//   return filteredNumbers;
+// }
 
-// Перевірка:
-console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
-console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
-console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
-console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
-console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
+// // Перевірка:
+// console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
+// console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
+// console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
+// console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
+// console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
+// Звичайне оголошення функції
+
+// function classicAdd(a, b, c) {
+//   return a + b + c;
+// }
+
+// // Те саме стрілочною функцією
+// const arrowAdd = (a, b, c) => {
+//   return a + b + c;
+// };

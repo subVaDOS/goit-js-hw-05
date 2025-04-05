@@ -78,13 +78,13 @@
 // console.log(calculateTotalPrice([12, 85, 37, 4])); // 138
 // console.log(calculateTotalPrice([164, 48, 291])); // 503
 // console.log(calculateTotalPrice([412, 371, 94, 63, 176])); // 1116
-const dirtyMultiply = (array, value) => {
-  for (let i = 0; i < array.length; i += 1) {
-    array[i] = array[i] * value;
-  }
-};
+// const dirtyMultiply = (array, value) => {
+//   for (let i = 0; i < array.length; i += 1) {
+//     array[i] = array[i] * value;
+//   }
+// };
 
-const numbers = [1, 2, 3, 4, 5];
-dirtyMultiply(numbers, 2);
-// Відбулася мутація вихідних даних - масиву numbers
-console.log(numbers); // [2, 4, 6, 8, 10]
+// const numbers = [1, 2, 3, 4, 5];
+// dirtyMultiply(numbers, 2);
+// // Відбулася мутація вихідних даних - масиву numbers
+// console.log(numbers); // [2, 4, 6, 8, 10]

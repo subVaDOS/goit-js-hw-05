@@ -192,3 +192,12 @@
 // console.log(colorPickerOptions.find(option => option.label === 'white')); // undefined
 // console.log(colorPickerOptions.find(option => option.label === 'red')); // { label: "red", color: "#F44336" }
 // console.log(colorPickerOptions.find(option => option.label === 'green')); // { label: "green", color: "#4CAF50" }
+
+// const products = [
+//   { name: 'apple', quantity: 1 },
+//   { name: 'orange', quantity: 2 },
+//   { name: 'plum', quantity: 3 },
+// ];
+
+// const hasEveryProduct = products.every(product => product.quantity > 0);
+// console.log(hasEveryProduct); // false

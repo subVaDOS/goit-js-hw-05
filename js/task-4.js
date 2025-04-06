@@ -242,14 +242,30 @@
 // console.log(averageScore); // 67.4
 // // console.log(averageScore); // 67.4
 
-const players = [
-  { name: 'Mango', playtime: 1270, gamesPlayed: 4 },
-  { name: 'Poly', playtime: 469, gamesPlayed: 2 },
-  { name: 'Ajax', playtime: 690, gamesPlayed: 3 },
-  { name: 'Kiwi', playtime: 241, gamesPlayed: 1 },
-];
+// const players = [
+//   { name: 'Mango', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Poly', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Ajax', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Kiwi', playtime: 241, gamesPlayed: 1 },
+// ];
 
-const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
-  return acc + player.playtime / player.gamesPlayed;
-}, 0);
-console.log(totalAveragePlaytimePerGame); // 1023
+// const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
+//   return acc + player.playtime / player.gamesPlayed;
+// }, 0);
+// console.log(totalAveragePlaytimePerGame); // 1023
+
+// const calculateTotalBalance = users => {
+//   return users.reduce((total, user) => total + user.balance, 0);
+// };
+
+// const users = [
+//   { name: 'Moore Hensley', balance: 2811 },
+//   { name: 'Sharlene Bush', balance: 3821 },
+//   { name: 'Ross Vazquez', balance: 3793 },
+//   { name: 'Elma Head', balance: 2278 },
+//   { name: 'Carey Barr', balance: 3951 },
+//   { name: 'Blackburn Dotson', balance: 1498 },
+//   { name: 'Sheree Anthony', balance: 2764 },
+// ];
+
+// console.log(calculateTotalBalance(users)); // 20916

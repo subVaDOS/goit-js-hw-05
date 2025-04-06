@@ -148,6 +148,18 @@ const students = [
   { name: 'Ajax', score: 37 },
   { name: 'Kiwi', score: 94 },
   { name: 'Houston', score: 64 },
+  { name: 'Chelsy', score: 85 },
+  { name: 'Boris', score: 45 },
+  { name: 'Lola', score: 72 },
+  { name: 'Mia', score: 29 },
+  { name: 'Tom', score: 91 },
+  { name: 'Jerry', score: 66 },
+  { name: 'Oscar', score: 52 },
+  { name: 'Liam', score: 78 },
+  { name: 'Emma', score: 49 },
+  { name: 'Olivia', score: 88 },
+  { name: 'Noah', score: 73 },
+  { name: 'Ava', score: 39 },
 ];
 
 const best = students.filter(student => student.score >= HIGH_SCORE);

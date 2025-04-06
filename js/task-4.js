@@ -201,3 +201,25 @@
 
 // const hasEveryProduct = products.every(product => product.quantity > 0);
 // console.log(hasEveryProduct); // false
+
+// array.some((element, index, array) => {
+//   // Тіло колбек-функції
+// });
+
+// // Чи є хоча б один елемент, що більший або дорівнює нулю? - так
+// [1, 2, 3, 4, 5].some(value => value >= 0); // true
+
+// // Чи є хоча б один елемент, що більший або дорівнює нулю? - так
+// [-7, -20, 3, -10, -14].some(value => value >= 0); // true
+
+// // Чи є хоча б один елемент, що менший від нуля? - ні
+// [1, 2, 3, 4, 5].some(value => value < 0); // false
+
+// // Чи є хоча б один елемент, що менший від нуля? - так
+// [1, 2, 3, -10, 4, 5].some(value => value < 0); // true
+
+const total = [2, 7, 3].reduce((previousValue, number) => {
+  return previousValue + number;
+}, 0);
+
+console.log(total); // 12

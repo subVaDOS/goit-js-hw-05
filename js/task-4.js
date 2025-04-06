@@ -218,8 +218,28 @@
 // // Чи є хоча б один елемент, що менший від нуля? - так
 // [1, 2, 3, -10, 4, 5].some(value => value < 0); // true
 
-const total = [2, 7, 3].reduce((previousValue, number) => {
-  return previousValue + number;
+// const total = [2, 7, 3].reduce((previousValue, number) => {
+//   return previousValue + number;
+// }, 0);
+
+// console.log(total); // 12
+
+const students = [
+  { name: 'Mango', score: 83 },
+  { name: 'Poly', score: 59 },
+  { name: 'Ajax', score: 37 },
+  { name: 'Kiwi', score: 94 },
+  { name: 'Houston', score: 64 },
+];
+
+// Назва акумулятора може бути довільною, це просто параметр функції
+const totalScore = students.reduce((total, student) => {
+  return total + student.score;
+  console.log(averageScore); // 67.4
 }, 0);
 
-console.log(total); // 12
+const averageScore = totalScore / students.length;
+console.log(averageScore); // 67.4
+// const students = [
+//   { name: 'Mango', score: 83 },  //   { name: 'Poly', score: 59 },
+//   { name: 'Ajax', score: 37 },       //   { name: 'Kiwi', score: 94 },

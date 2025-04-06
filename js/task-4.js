@@ -173,22 +173,22 @@
 // );
 // console.log(average); // Масив об'єктів з іменами Poly і Houston
 
-const colorPickerOptions = [
-  { label: 'red', color: '#F44336' },
-  { label: 'green', color: '#4CAF50' },
-  { label: 'blue', color: '#2196F3' },
-  { label: 'pink', color: '#E91E63' },
-  { label: 'indigo', color: '#3F51B5' },
-];
+// const colorPickerOptions = [
+//   { label: 'red', color: '#F44336' },
+//   { label: 'green', color: '#4CAF50' },
+//   { label: 'blue', color: '#2196F3' },
+//   { label: 'pink', color: '#E91E63' },
+//   { label: 'indigo', color: '#3F51B5' },
+// ];
 
-colorPickerOptions.find(option => option.label === 'blue'); // { label: "blue", color: "#2196F3" }
-colorPickerOptions.find(option => option.label === 'pink'); // { label: "pink", color: "#E91E63" }
-colorPickerOptions.find(option => option.label === 'white'); // undefined
-colorPickerOptions.find(option => option.label === 'red'); // { label: "red", color: "#F44336" }
-colorPickerOptions.find(option => option.label === 'green'); // { label: "green", color: "#4CAF50" }
+// colorPickerOptions.find(option => option.label === 'blue'); // { label: "blue", color: "#2196F3" }
+// colorPickerOptions.find(option => option.label === 'pink'); // { label: "pink", color: "#E91E63" }
+// colorPickerOptions.find(option => option.label === 'white'); // undefined
+// colorPickerOptions.find(option => option.label === 'red'); // { label: "red", color: "#F44336" }
+// colorPickerOptions.find(option => option.label === 'green'); // { label: "green", color: "#4CAF50" }
 
-console.log(colorPickerOptions.find(option => option.label === 'blue')); // { label: "blue", color: "#2196F3" }
-console.log(colorPickerOptions.find(option => option.label === 'pink')); // { label: "pink", color: "#E91E63" }
-console.log(colorPickerOptions.find(option => option.label === 'white')); // undefined
-console.log(colorPickerOptions.find(option => option.label === 'red')); // { label: "red", color: "#F44336" }
-console.log(colorPickerOptions.find(option => option.label === 'green')); // { label: "green", color: "#4CAF50" }
+// console.log(colorPickerOptions.find(option => option.label === 'blue')); // { label: "blue", color: "#2196F3" }
+// console.log(colorPickerOptions.find(option => option.label === 'pink')); // { label: "pink", color: "#E91E63" }
+// console.log(colorPickerOptions.find(option => option.label === 'white')); // undefined
+// console.log(colorPickerOptions.find(option => option.label === 'red')); // { label: "red", color: "#F44336" }
+// console.log(colorPickerOptions.find(option => option.label === 'green')); // { label: "green", color: "#4CAF50" }

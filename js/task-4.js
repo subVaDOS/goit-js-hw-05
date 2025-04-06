@@ -128,14 +128,35 @@
 // const names = students.map(student => student.name);
 // console.log(names); // ["Mango", "Poly", "Ajax", "Kiwi", "Houston"]
 
+// const students = [
+//   { name: 'Mango', courses: ['mathematics', 'physics'] },
+//   { name: 'Poly', courses: ['science', 'mathematics'] },
+//   { name: 'Kiwi', courses: ['physics', 'biology'] },
+// ];
+
+// const mappedCourses = students.map(student => student.courses);
+// console.log(mappedCourses); // [["mathematics", "physics"], ["science", "mathematics"], ["physics", "biology"]]
+
+// const flattenedCourses = students.flatMap(student => student.courses);
+// console.log(flattenedCourses); // ["mathematics", "physics", "science", "mathematics", "physics", "biology"];
+
+const LOW_SCORE = 50;
+const HIGH_SCORE = 80;
 const students = [
-  { name: 'Mango', courses: ['mathematics', 'physics'] },
-  { name: 'Poly', courses: ['science', 'mathematics'] },
-  { name: 'Kiwi', courses: ['physics', 'biology'] },
+  { name: 'Mango', score: 83 },
+  { name: 'Poly', score: 59 },
+  { name: 'Ajax', score: 37 },
+  { name: 'Kiwi', score: 94 },
+  { name: 'Houston', score: 64 },
 ];
 
-const mappedCourses = students.map(student => student.courses);
-console.log(mappedCourses); // [["mathematics", "physics"], ["science", "mathematics"], ["physics", "biology"]]
+const best = students.filter(student => student.score >= HIGH_SCORE);
+console.log(best); // Масив об'єктів з іменами Mango і Kiwi
 
-const flattenedCourses = students.flatMap(student => student.courses);
-console.log(flattenedCourses); // ["mathematics", "physics", "science", "mathematics", "physics", "biology"];
+const worst = students.filter(student => student.score < LOW_SCORE);
+console.log(worst); // Масив з одним об'єктом Ajax
+
+const average = students.filter(
+  student => student.score >= LOW_SCORE && student.score < HIGH_SCORE
+);
+console.log(average); // Масив об'єктів з іменами Poly і Houston

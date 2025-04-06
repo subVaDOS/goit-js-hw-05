@@ -239,7 +239,7 @@ const totalScore = students.reduce((total, student) => {
 }, 0);
 
 const averageScore = totalScore / students.length;
-console.log(averageScore); // 67.4
+console.log(totalScore); // 67.4
 // const students = [
 //   { name: 'Mango', score: 83 },  //   { name: 'Poly', score: 59 },
 //   { name: 'Ajax', score: 37 },       //   { name: 'Kiwi', score: 94 },

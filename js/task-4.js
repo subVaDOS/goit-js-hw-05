@@ -224,22 +224,32 @@
 
 // console.log(total); // 12
 
-const students = [
-  { name: 'Mango', score: 83 },
-  { name: 'Poly', score: 59 },
-  { name: 'Ajax', score: 37 },
-  { name: 'Kiwi', score: 94 },
-  { name: 'Houston', score: 64 },
+// const students = [
+//   { name: 'Mango', score: 83 },
+//   { name: 'Poly', score: 59 },
+//   { name: 'Ajax', score: 37 },
+//   { name: 'Kiwi', score: 94 },
+//   { name: 'Houston', score: 64 },
+// ];
+
+// // Назва акумулятора може бути довільною, це просто параметр функції
+// const totalScore = students.reduce((total, student) => {
+//   return total + student.score;
+//   console.log(averageScore); // 67.4
+// }, 0);
+
+// const averageScore = totalScore / students.length;
+// console.log(averageScore); // 67.4
+// // console.log(averageScore); // 67.4
+
+const players = [
+  { name: 'Mango', playtime: 1270, gamesPlayed: 4 },
+  { name: 'Poly', playtime: 469, gamesPlayed: 2 },
+  { name: 'Ajax', playtime: 690, gamesPlayed: 3 },
+  { name: 'Kiwi', playtime: 241, gamesPlayed: 1 },
 ];
 
-// Назва акумулятора може бути довільною, це просто параметр функції
-const totalScore = students.reduce((total, student) => {
-  return total + student.score;
-  console.log(averageScore); // 67.4
+const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
+  return acc + player.playtime / player.gamesPlayed;
 }, 0);
-
-const averageScore = totalScore / students.length;
-console.log(totalScore); // 67.4
-// const students = [
-//   { name: 'Mango', score: 83 },  //   { name: 'Poly', score: 59 },
-//   { name: 'Ajax', score: 37 },       //   { name: 'Kiwi', score: 94 },
+console.log(totalAveragePlaytimePerGame); // 1023

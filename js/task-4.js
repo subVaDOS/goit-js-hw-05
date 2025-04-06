@@ -140,35 +140,55 @@
 // const flattenedCourses = students.flatMap(student => student.courses);
 // console.log(flattenedCourses); // ["mathematics", "physics", "science", "mathematics", "physics", "biology"];
 
-const LOW_SCORE = 50;
-const HIGH_SCORE = 80;
-const students = [
-  { name: 'Mango', score: 83 },
-  { name: 'Poly', score: 59 },
-  { name: 'Ajax', score: 37 },
-  { name: 'Kiwi', score: 94 },
-  { name: 'Houston', score: 64 },
-  { name: 'Chelsy', score: 85 },
-  { name: 'Boris', score: 45 },
-  { name: 'Lola', score: 72 },
-  { name: 'Mia', score: 29 },
-  { name: 'Tom', score: 91 },
-  { name: 'Jerry', score: 66 },
-  { name: 'Oscar', score: 52 },
-  { name: 'Liam', score: 78 },
-  { name: 'Emma', score: 49 },
-  { name: 'Olivia', score: 88 },
-  { name: 'Noah', score: 73 },
-  { name: 'Ava', score: 39 },
+// const LOW_SCORE = 50;
+// const HIGH_SCORE = 80;
+// const students = [
+//   { name: 'Mango', score: 83 },
+//   { name: 'Poly', score: 59 },
+//   { name: 'Ajax', score: 37 },
+//   { name: 'Kiwi', score: 94 },
+//   { name: 'Houston', score: 64 },
+//   { name: 'Chelsy', score: 85 },
+//   { name: 'Boris', score: 45 },
+//   { name: 'Lola', score: 72 },
+//   { name: 'Mia', score: 29 },
+//   { name: 'Tom', score: 91 },
+//   { name: 'Jerry', score: 66 },
+//   { name: 'Oscar', score: 52 },
+//   { name: 'Liam', score: 78 },
+//   { name: 'Emma', score: 49 },
+//   { name: 'Olivia', score: 88 },
+//   { name: 'Noah', score: 73 },
+//   { name: 'Ava', score: 39 },
+// ];
+
+// const best = students.filter(student => student.score >= HIGH_SCORE);
+// console.log(best); // Масив об'єктів з іменами Mango і Kiwi
+
+// const worst = students.filter(student => student.score < LOW_SCORE);
+// console.log(worst); // Масив з одним об'єктом Ajax
+
+// const average = students.filter(
+//   student => student.score >= LOW_SCORE && student.score < HIGH_SCORE
+// );
+// console.log(average); // Масив об'єктів з іменами Poly і Houston
+
+const colorPickerOptions = [
+  { label: 'red', color: '#F44336' },
+  { label: 'green', color: '#4CAF50' },
+  { label: 'blue', color: '#2196F3' },
+  { label: 'pink', color: '#E91E63' },
+  { label: 'indigo', color: '#3F51B5' },
 ];
 
-const best = students.filter(student => student.score >= HIGH_SCORE);
-console.log(best); // Масив об'єктів з іменами Mango і Kiwi
+colorPickerOptions.find(option => option.label === 'blue'); // { label: "blue", color: "#2196F3" }
+colorPickerOptions.find(option => option.label === 'pink'); // { label: "pink", color: "#E91E63" }
+colorPickerOptions.find(option => option.label === 'white'); // undefined
+colorPickerOptions.find(option => option.label === 'red'); // { label: "red", color: "#F44336" }
+colorPickerOptions.find(option => option.label === 'green'); // { label: "green", color: "#4CAF50" }
 
-const worst = students.filter(student => student.score < LOW_SCORE);
-console.log(worst); // Масив з одним об'єктом Ajax
-
-const average = students.filter(
-  student => student.score >= LOW_SCORE && student.score < HIGH_SCORE
-);
-console.log(average); // Масив об'єктів з іменами Poly і Houston
+console.log(colorPickerOptions.find(option => option.label === 'blue')); // { label: "blue", color: "#2196F3" }
+console.log(colorPickerOptions.find(option => option.label === 'pink')); // { label: "pink", color: "#E91E63" }
+console.log(colorPickerOptions.find(option => option.label === 'white')); // undefined
+console.log(colorPickerOptions.find(option => option.label === 'red')); // { label: "red", color: "#F44336" }
+console.log(colorPickerOptions.find(option => option.label === 'green')); // { label: "green", color: "#4CAF50" }
